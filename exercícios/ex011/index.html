@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Abra esse site em vários dispositivos diferentes ou simplesmente aumente e díminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto-g">
+    </picture>
+    <h1>Reproduzindo Aúdio</h1>
+    <h2> Método 1</h2>
+    <audio src="midia/Auld Lang Syne - DJ Williams.mp3" controls></audio>
+    <h2>Método 2</h2>
+    <audio preload="auto" controls loop>
+        <source src="midia/Auld Lang Syne - DJ Williams.mp3" type="audio/mpeg">
+        <p>Infelizmente o navegador não consegue reproduzir aúdio <a href="midia/Auld Lang Syne - DJ Williams.mp3">Baixar arquivo</a></p>
+    </audio>
+</body>
+
+</html>
